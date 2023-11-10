@@ -14,8 +14,7 @@
 BH1750 lightMeter ;
 DHTesp dht;
 WiFiClient espClient;
-// Matthew Filbert Tander
-// 2501994241
+
 // ESP32-DEvkit V4
 //Upesy wroom
 
@@ -42,10 +41,10 @@ void sensorDisplay(void *pvParameters){
    if(lux >=400 ){
     
    condition = "WARNING!";
-   Serial.printf("WARNING, 2501994241, %.2f lx\n", lux);
+   Serial.printf("WARNING, 00001111, %.2f lx\n", lux);
   }
   else
-  { Serial.printf("CLOSED, 2501994241, %.2f lx\n", lux);
+  { Serial.printf("CLOSED, 00001111, %.2f lx\n", lux);
   condition = "CLOSED";}
 
    
